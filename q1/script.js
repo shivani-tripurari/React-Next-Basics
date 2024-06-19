@@ -10,11 +10,13 @@
     const empInfo = document.querySelector(".employees--single-list");
 
     //add emp logic 
+    
     //select emp logic
     empList.addEventListener("click",(e)=>{
         if(e.target.tagName === "SPAN" && selectedEmployeeId !== e.target.id){
             selectedEmployeeId = e.target.id;
             renderEmp();
+            renderSingleEmp();
         }
     })
 
